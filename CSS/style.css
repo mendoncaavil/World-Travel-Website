@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;    
+    line-height: 1.7;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+p, li{
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+
+}
+
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+
+ /* ********************** utility class ******************************** */
+
+
+ .container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+ }
+
+ .btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em;
+    
+ }
+
+.btn:hover{
+    background-color: #929491;
+} 
+
+ .btn_primary{
+    background-color: black;
+    border-radius: 10em;
+ }
+
+.btn_secondary{
+    background-color: black;
+    border: 1px solid yellow;
+    border-radius: 1.5em;
+}
+
+.lg_heading{    /*lg = large */
+    font-size: 3rem;
+}  
+
+.md_heading{   /* md = medium */
+    font-size: 2.2rem;
+}
+
+.text_yellow{
+    color: yellow;
+}
+
+.text_light{
+    color: #f4f4f4;
+}
+
+.text_black{
+    color: #333;
+}
+
+
+.text_grey{
+    color: #555;
+}
+
+.bg_dark{
+    background-color: #263238;
+}
+
+
+.header{
+    height: 95vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url("../Img/header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.navbar{
+    padding: 2rem;
+    
+}
+
+.navbar .logo{
+    float: left;
+    font-size: 3.5rem;
+    display: inline;
+}
+
+.navbar .navitems{
+    float: right;
+    margin-top: 2rem;
+    
+}
+
+.navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4;
+}
+
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.navbar .navitems .navitem{
+    display: inline;
+    padding: 1rem;
+    
+    
+    
+}
+
+.navitem:hover{
+    /* text-decoration: underline; */
+    border-bottom: 1px solid white;
+    /* padding-bottom: 0.01rem; */
+}
+
+        /* ******************* Header Contect Style ******************** */
+
+.header_content h1{
+    font-weight: 700;
+}
+
+.header_content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)); */
+}
+
+
+    /* *********** Showcase stylinh ************888 */
+
+
+.showCase{
+    background-color: #ddd;
+    padding: 10rem 0;
+}    
+
+/* .container{
+    border: 2px solid black;
+    height: 45rem;
+} */
+
+.row{
+    height: 350px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px #aaa;
+
+}
+
+
+.row1{
+    margin-bottom: 10rem;
+}
+
+
+.row1 .imgbox,
+.row2 .textbox{
+    float: left;
+    width: 50%;
+    
+}
+
+
+.row1 .textbox,
+.row2 .imgbox{
+    float: right;
+    width: 50%;
+    
+}
+
+.row .imgbox{
+    height: 100%;
+
+}
+
+.row .textbox{
+    padding: 3rem;
+}
+
+.row .imgbox img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;  /*  aspect ratio will be remained hence will be best for resposiveness */
+    
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+    /* **************Features Section ******************* */
+
+.features{
+    padding: 10rem 0;
+}
+
+.mainBox{
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.404);
+}
+
+.box{
+    width: 33.333%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+.box1, .box3{
+    background-color: #263238;
+    color: white;
+} 
+
+.box2{
+    background-color: #f7f040;
+    color: black;
+    
+}
+
+.mainBox::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+    /* ***************Footer******************* */
+
+.footer{
+    
+    background-color: #263238;
+    text-align: center;
+    
+
+ }
+ 
+.footer i, p{
+    color: white;
+ }
+
+.footer i{
+    padding: 2rem;
+ }
+
+
+  /* ***********************ABOUT PAGE***************************** */
+
+hr{
+    background-color: darkgoldenrod;
+    border: 0 none;
+    height: 5px;
+    
+}
+
+.about{
+    padding: 5rem 0;
+}
+
+.about_wrapper{
+ 
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.about_wrapper .left{
+    float: left;
+    width: 50%;
+    
+}
+
+.about_wrapper .right{
+    float: right;
+    width: 50%;
+    
+}   
+
+.about_wrapper::after{
+    content: "";    
+    display: block;
+    clear: both;
+
+}
+
+.about_wrapper li::before{
+    content: '\2713';	
+    color: darkgoldenrod;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+    /* ***********************COUNT STYLE***************************** */
+
+.counts{
+    margin-top: 3rem;
+}
+
+.countItems{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.countItems span{
+    font-weight: 700;
+    font-size: 3rem;
+    padding-top: 5rem;
+    color: darkgoldenrod; 
+} 
+
+.countItems p{
+    font-weight: 700;
+    color: #555;
+}
+
+.counts::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.banner{
+    margin-top: 5rem;
+    background-color: #F7F040;
+    padding: 2rem;
+    box-shadow: 5px 5px 10px #0000001c;
+}
+
+.bannerLine{
+    font-weight: 500;
+    font-size: 2.2rem;
+    text-align: center;
+    color: black;
+}
+
+.bannnerBtn{
+    display: inline-block;
+    text-align: center;  
+    font-weight: 700;
+    font-size: 2rem;
+    border: 4px solid black;
+    padding: 0.5em 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    color: black;
+    border-radius: 5px;
+}
+    
+.bannerLeft{
+    float: left;
+    width: 60%;
+}
+
+.bannerRight{
+    float: right;
+    width: 40%;
+    text-align: center;
+}
+
+.banner::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+    /* ***************************** Contact Page Form************************************** */
+
+.ContactForm{
+    background-color: #f7f7f7;;
+    padding: 5rem 0;
+
+}
+
+.formWrapper{
+    /* border: 5px solid black; */
+    margin-top: 5rem;
+    /* height: 80vh; */
+}
+
+.formWrapper .address{
+    height: 760px;
+    background-color: white;
+    width: 49%;
+    float: left;
+    padding: 1rem;
+}
+
+
+
+.formWrapper .address span{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.formWrapper .address h2{
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.addressImg img{
+    width: 90%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position: right;
+}
+
+.formWrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+    /* ***************************** Form Styling************************************** */
+
+
+
+.formWrapper .contactUs{
+    height: 760px;
+    background-color: white;
+    padding: 1rem;
+    float: right;
+    width: 49%;
+} 
+
+.formgroup{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.formgroup label{
+    display: block;
+}
+
+.formgroup input{
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.formgroup label::after{
+    content: "*";
+    color: #e63946;
+}
+
+.formBtn{
+   display: block;
+   margin: 0 auto;
+   padding: 0.5em 3em;
+   font-size: 1.8rem;
+   text-transform: uppercase;
+    background-color: #F7F040;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#message{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+
+     /* ***************************** Media Queries************************************** */
+
+
+@media (max-width: 500px){
+
+
+    html{
+        font-size: 40%;
+    }
+
+
+    /* ********************************FOR HOME PAGE******************************************** */
+
+    .navbar .logo,
+    .navbar  .navitems {
+        float: none; 
+        display: block;
+        width: 100%;
+        text-align: center;
+        align-content: center;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .imgbox, 
+    .row .textbox{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mainBox .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.404);
+    }
+
+    .mainBox .box2, .box3{
+        margin-top: 5rem;
+    }
+
+    .mainBox{
+        box-shadow: none;
+    }
+
+    /* ********************************FOR ABOUT PAGE******************************************** */
+
+    .banner .bannerLeft,
+    .banner .bannerRight{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .formWrapper .address{
+        float: none;
+        width: 100%;
+        text-align: center;
+        height: auto;
+        margin-bottom: 8rem;
+    } 
+
+    .formWrapper .contactUs{
+        float: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .formgroup{
+        font-weight: 500;
+    }
+
+}
+
+ @media (min-width: 501px) and (max-width: 800px){
+    html{
+        font-size: 50%;
+    } 
+
+
+    /* ********************************FOR HOME PAGE******************************************** */
+
+
+     .header_content .lg_heading{
+        margin: 5rem 0;
+       
+    } 
+
+
+    .navbar .logo,
+    .navbar  .navitems {
+        float: none; 
+        display: block;
+        width: 100%;
+        text-align: center;
+        align-content: center;
+        
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .imgbox, 
+    .row .textbox{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mainBox .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.404);
+    }
+
+    .mainBox .box2, .box3{
+        margin-top: 5rem;
+    }
+
+    .mainBox{
+        box-shadow: none;
+    } 
+
+    /* ********************************FOR ABOUT PAGE******************************************** */
+
+    .banner .bannerLeft,
+    .banner .bannerRight{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .formWrapper .address{
+        float: none;
+        width: 100%;
+        text-align: center;
+        height: auto;
+        margin-bottom: 8rem;
+    } 
+
+    .formWrapper .contactUs{
+        float: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    
+}
+
